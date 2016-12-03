@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 ignore %r{^coverage/}
 notification :terminal_notifier, activate: "com.googlecode.iterm2"
 
