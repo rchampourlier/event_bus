@@ -1,5 +1,10 @@
 # EventBus
 
+[![Build Status](https://travis-ci.org/rchampourlier/event_bus.svg?branch=master)](https://travis-ci.org/rchampourlier/event_bus)
+[![Code Climate](https://codeclimate.com/github/rchampourlier/event_bus/badges/gpa.svg)](https://codeclimate.com/github/rchampourlier/event_bus)
+[![Test Coverage](https://codeclimate.com/github/rchampourlier/event_bus/badges/coverage.svg)](https://codeclimate.com/github/rchampourlier/event_bus/coverage)
+[![Issue Count](https://codeclimate.com/github/rchampourlier/event_bus/badges/issue_count.svg)](https://codeclimate.com/github/rchampourlier/event_bus)
+
 EventBus is a really simple implementation of an EventBus in Ruby. It enables you to start implementing your application using an event bus pattern without relying on some specific pub/sub service or component (like Redis, RabbitMQ). This will enable to move to such future-proof implementation just by using the same interface, thus reducing the need for refactoring or rewrites!
 
 ## Installation
