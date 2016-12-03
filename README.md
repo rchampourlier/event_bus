@@ -1,15 +1,13 @@
 # EventBus
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/event_bus`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+EventBus is a really simple implementation of an EventBus in Ruby. It enables you to start implementing your application using an event bus pattern without relying on some specific pub/sub service or component (like Redis, RabbitMQ). This will enable to move to such future-proof implementation just by using the same interface, thus reducing the need for refactoring or rewrites!
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'event_bus'
+gem "event_bus"
 ```
 
 And then execute:
@@ -22,7 +20,17 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+# Subscribe and publish to the :global channel
+EventBus.subscribe do |event_name:, event_data:|
+  puts "Received event named #{event_name} with data #{event_data}"
+end
+EventBus.publish(event_name: :my_first_event, event_data: true)
+# => "Received event named my_first_event with data true"
+
+# To subscribe / publish to a specific channel, just add the :channel_name parameter:
+EventBus.publish(channel_name: :my_first_channel, ...)
+```
 
 ## Development
 
@@ -32,5 +40,4 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/event_bus. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
-
+Bug reports and pull requests are welcome on GitHub at https://github.com/rchampourlier/event_bus. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
