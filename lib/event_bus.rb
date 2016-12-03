@@ -1,0 +1,2 @@
+module EventBus
+end

@@ -1,0 +1,12 @@
+Style/LineLength:
+  Max: 120
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+Style/EmptyLinesAroundBody:
+  Enabled: false
+Style/EmptyLinesAroundModule:
+  Enabled: false
+Style/EmptyLinesAroundClass:
+  Enabled: false
+Style/AlignParameters:
+  EnforcedStyle: with_fixed_indentation
