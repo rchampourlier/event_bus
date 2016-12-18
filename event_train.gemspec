@@ -2,19 +2,19 @@
 # frozen_string_literal: true
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "event_bus/version"
+require "event_train/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "event_bus"
-  spec.version       = EventBus::VERSION
+  spec.name          = "event_train"
+  spec.version       = EventTrain::VERSION
   spec.authors       = ["Romain Champourlier"]
   spec.email         = ["public@rchampourlier.com"]
 
-  spec.summary       = "A really simple implementation of an Event Bus in Ruby, mostly for my own projects."
-  spec.description   = "This provides a simple implementation of an Event Bus. It makes easy to use the abstraction" \
+  spec.summary       = "A really simple implementation of an event bus in Ruby, mostly for my own projects."
+  spec.description   = "This provides a simple implementation of an event bus. It makes easy to use the abstraction" \
                        "without needing dedicated components, like RabbitMQ. Using this will however make it easy" \
                        "to rewrite your code to use more solid foundations for the future."
-  spec.homepage      = "https://github.com/rchampourlier/event_bus"
+  spec.homepage      = "https://github.com/rchampourlier/event_train"
 
   # Prevent pushing this gem to RubyGems.org by setting "allowed_push_host", or
   # delete this section to allow pushing this gem to any host.

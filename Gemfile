@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 source "https://rubygems.org"
 
-# Specify your gem"s dependencies in event_bus.gemspec
+# Specify your gem"s dependencies in event_train.gemspec
 gemspec
 
 group :development do

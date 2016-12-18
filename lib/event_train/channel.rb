@@ -1,13 +1,13 @@
 # frozen_string_literal: true
 require "logger"
 
-module EventBus
+module EventTrain
 
   # A channel where events may be published and to which consumers
   # may subscribe.
   #
   # Interacting with a channel directly is not mandatory, you may
-  # use the global EventBus module to access it without the channel
+  # use the global EventTrain module to access it without the channel
   # instance. The top-level module acts as a singleton.
   class Channel
     attr_reader :name, :logger

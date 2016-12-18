@@ -9,8 +9,8 @@ SimpleCov.start do
   end
 end
 
-require "event_bus"
+require "event_train"
 RSpec.configure do |config|
   config.order = :random
-  config.after(:each) { EventBus.reset_all_channels }
+  config.after(:each) { EventTrain.reset_all_channels }
 end

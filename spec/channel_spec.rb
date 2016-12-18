@@ -1,7 +1,7 @@
 require "spec_helper"
-require "event_bus/channel"
+require "event_train/channel"
 
-describe EventBus::Channel do
+describe EventTrain::Channel do
   subject { described_class.new(name: :any) }
 
   describe "#publish" do

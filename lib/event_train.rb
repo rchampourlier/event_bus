@@ -1,15 +1,15 @@
 # frozen_string_literal: true
-require "event_bus/version"
-require "event_bus/channel"
+require "event_train/version"
+require "event_train/channel"
 
 # A basic pub/sub event bus.
 #
 # How to use
 # ==========
 #
-# EventBus.subscribe { |event_name:, event_data:| puts "received #{event_name}"}
-# EventBus.publish(event_name: :some_event, event_data: true)
-module EventBus
+# EventTrain.subscribe { |event_name:, event_data:| puts "received #{event_name}"}
+# EventTrain.publish(event_name: :some_event, event_data: true)
+module EventTrain
   @channels = {}
 
   # Publishes a new event on the specified channel.
