@@ -10,7 +10,7 @@ group :development do
 end
 
 group :test do
+  gem "codeclimate-test-reporter"
   gem "simplecov", require: false
   gem "terminal-notifier-guard"
-  gem "codeclimate-test-reporter"
 end
